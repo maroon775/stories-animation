@@ -1,19 +1,28 @@
 .App {
-  text-align: center;
-  padding: 15px;
-  width: 500px;
-  border: 1px solid #999;
-  border-radius: 30px;
-  height: 100vh;
-  box-sizing: border-box;
-  margin: 0 auto;
-  overflow: auto;
+    text-align: center;
+    padding: 15px;
+    width: 500px;
+    border: 1px solid #999;
+    border-radius: 30px;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
 }
 
+.App-header {
+    box-shadow: 0 9px 10px 5px #fff;
+    z-index: 2;
+    position: relative;
+    height: 25vh;
+    /*border-bottom: 1px solid #fcddd2;*/
+}
 .App-grid {
-  margin-top: 20px;
-  display: flex;
-  flex-flow: row wrap;
-  /*align-items: center;*/
-  /*justify-content: center;*/
+    display: flex;
+    flex-flow: row wrap;
+    height: 75vh;
+    overflow: auto;
+    box-sizing: border-box;
+    padding-bottom: 25px;
 }

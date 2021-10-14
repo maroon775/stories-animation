@@ -1,10 +1,14 @@
+.headerOuter {
+    position: relative;
+}
 .header {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-between;
-    position: sticky;
+    flex-flow: row nowrap;
+    height: 100%;
 }
 
 .header__profile {
-    margin-top: 40px;
+    align-self: flex-end;
 }
