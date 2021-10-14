@@ -1,0 +1,93 @@
+.storyOuter {
+    flex: 1 1 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.story {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.story svg {
+    fill: none;
+    stroke-linecap: round;
+    stroke-width: 2;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 0;
+
+    /*  animation: stroke-draw 6s cubic-bezier(0.77, 0, 0.175, 1) infinite alternate;*/
+    transform:  translate(-50%, -1px);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 3;
+    width: 86px;
+}
+
+.storyImage {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.userAvatar {
+    max-width: 100%;
+    border-radius: 80px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+}
+
+.userName {
+    margin-top: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    width: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.userTitle {
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: 500;
+    width: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #adadad;
+}
+
+@keyframes stroke-draw {
+    from {
+        stroke: #c92d8c;
+        stroke-dasharray: 1;
+        transform: translate(-50%, -1px);
+    }
+    to {
+        stroke: #f99847;
+        transform: translate(-50%, -1px) rotate(180deg);
+        stroke-dasharray: 8;
+    }
+}
+
+
+.story.story_un_viewed .storyImage {
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #c92d8c, #f99847);
+}
+
+.story.story_loading svg {
+    stroke: #c92d8c;
+    animation: stroke-draw 6s ease-out infinite alternate;
+}

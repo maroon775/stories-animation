@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.header__profile {
+    margin-top: 40px;
+}

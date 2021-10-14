@@ -1,0 +1,21 @@
+.button {
+    width: 40px;
+    height: 40px;
+    background: #e3e3e3;
+    padding: 11px;
+    border: none;
+    line-height: 40px;
+}
+
+.button_circle {
+    border-radius: 40px;
+}
+
+.button_rounded {
+    border-radius: 40px;
+}
+
+.button__image {
+    max-width: 100%;
+    display: block;
+}
