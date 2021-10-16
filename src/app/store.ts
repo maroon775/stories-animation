@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import StoryScreenReducer from '../components/StoryScreen/storyScreenSlice';
+import StoriesGridReducer from '../components/StoriesGrid/storiesGridSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    StoryScreen: StoryScreenReducer,
+    StoriesGrid: StoriesGridReducer
   },
 });
 

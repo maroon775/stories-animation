@@ -1,0 +1,7 @@
+.StoriesGrid {
+    display: flex;
+    flex-flow: row wrap;
+    /*overflow: auto;*/
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}

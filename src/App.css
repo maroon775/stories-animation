@@ -1,6 +1,6 @@
 .App {
     text-align: center;
-    padding: 15px;
+    padding: 0 15px;
     width: 500px;
     border: 1px solid #999;
     border-radius: 30px;
@@ -15,14 +15,13 @@
     box-shadow: 0 9px 10px 5px #fff;
     z-index: 2;
     position: relative;
-    height: 25vh;
-    /*border-bottom: 1px solid #fcddd2;*/
+    height: 25%;
+    padding-top: 15px;
+    box-sizing: border-box;
 }
 .App-grid {
-    display: flex;
-    flex-flow: row wrap;
-    height: 75vh;
+    height: 75%;
     overflow: auto;
-    box-sizing: border-box;
-    padding-bottom: 25px;
+    position: relative;
+    z-index: 1;
 }

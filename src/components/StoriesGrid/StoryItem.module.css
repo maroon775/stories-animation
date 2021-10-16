@@ -39,6 +39,7 @@
     border: 2px solid transparent;
     background-origin: border-box;
     background-clip: content-box, border-box;
+    z-index: 5;
 }
 
 .userAvatar {
@@ -83,8 +84,18 @@
 }
 
 
+.story.story_viewed .storyImage,
+.story.story_loading .storyImage,
+.story.story_un_viewed .storyImage {
+    cursor: pointer;
+}
 .story.story_un_viewed .storyImage {
     background-image: linear-gradient(white, white), radial-gradient(circle at top left, #c92d8c, #f99847);
+}
+
+.story.story_viewed .storyImage {
+    background-image: none;
+    border: 2px solid #ccc;
 }
 
 .story.story_loading svg {

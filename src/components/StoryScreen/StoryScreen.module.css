@@ -1,0 +1,17 @@
+.StoryScreenBackface {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.9);
+}
+.StoryScreen {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    z-index: 4;
+    visibility: hidden;
+}
