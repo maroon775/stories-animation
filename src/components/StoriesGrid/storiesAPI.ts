@@ -15,7 +15,7 @@ export function fetch() {
                     profileTitle: faker.name.findName(),
                     profileName: faker.internet.userName().toLowerCase(),
                     profilePicture: faker.image.avatar(),
-                    storyImage: faker.image.people(1000),
+                    storyImage: faker.random.image(1000),
                     state
                 } as StoryItemInterface;
             }));

@@ -9,7 +9,6 @@ import {useAppDispatch} from "./app/hooks";
 import {setStoryData} from "./components/StoryScreen/storyScreenSlice";
 import {setStoryState} from "./components/StoriesGrid/storiesGridSlice";
 import {StoryItemStateInterface} from "./components/StoriesGrid/StoryItem.interface";
-import {SwipedComponent} from "./components/SwipedComponent";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -87,7 +86,6 @@ function App() {
                 <StoriesGrid onStoryClick={storyClickHandler}/>
             </div>
 
-            {/*<SwipedComponent endPosition={position}><StoryScreen startPosition={position} onStoryClose={storyCloseHandler}/></SwipedComponent>*/}
             <StoryScreen startPosition={position} onStoryClose={storyCloseHandler}/>
         </div>
     );
